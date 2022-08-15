@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body {
+    margin: 0 1% 0 1%;
+    background-color: rgb(252, 252, 252);
+}
+.even-columns {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.even-columns > * {
+    margin-top: 2%;
+    flex-basis: 20rem;
+    height: fit-content;
+    min-height: 12rem;
+}
+.even-columns > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.column {
+    background-color: rgb(243, 243, 243);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.column-header {
+    width: 100%;
+    margin: 0;
+    padding: 0.8rem 0 0.8rem 0;
+    border-top-right-radius: 0.7rem;
+    border-top-left-radius: 0.7rem;
+    text-align: center;
+    color: white;
+}
+.column-content {
+    margin: 0.8rem;
+    align-self: stretch;
+    flex-grow: 1;
+}
+.card-status {
+    display: flex;
+    align-items: center;
+}
+.column-footer-button {
+    margin:0.5rem 0 0.5rem 0.7rem;
+    border: none;
+    background-color: rgb(243, 243, 243);
+}
+#plus-sign {
+    margin-right: 0.5 rem;
+}
+.assigment-card {
+    width: 95%;
+    align-self: center;
+    margin: 0.3rem 0 0.3rem 0;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 1px 2px 3px 0px rgb(151 151 151);
+
+}
+#column-1 {
+    box-shadow: inset 0.3rem 0.3rem 0 0 rgb(85, 85, 218);
+    flex-basis: 20rem;
+}
+#column-2 {
+    box-shadow: inset 0.3rem 0.3rem 0 0 rgb(255, 174, 0);
+}
+#column-3 {
+    box-shadow: inset 0.3rem 0.3rem 0 0 rgb(218, 85, 85);
+}
+#column-4 {
+    box-shadow: inset 0.3rem 0.3rem 0 0 rgb(85, 218, 85);
+}
+#column-1 > .column-header {
+    background-color: rgb(85, 85, 218);
+}
+#column-2 > .column-header {
+    background-color: rgb(255, 174, 0);
+}
+#column-3 > .column-header {
+    background-color: rgb(218, 85, 85);
+}
+#column-4 > .column-header {
+    background-color: rgb(85, 218, 85);
+}

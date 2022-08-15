@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kanban Board</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1 id="main-title">Committed Plan</h1>
+            <p>This is the commited plan</p>
+        </section>
+        <section class="navigation">
+            <button><span id="plus-sign">&#43; </span>Add</button>
+            <img src="Imagenes/search-button-c0042ed6.svg" alt="Search button">
+            <input type="search" id="search" placeholder="Search" autocomplete="off">
+        </section>
+    </header>
+    <main>
+        <section class="even-columns">
+            <div class="column" id="column-1">
+                <p class="column-header">Ready to start / <span id="number-of-task-column1">1</span></p>
+                <div class="column-content">
+                    <div class="assigment-card">
+                        <p>Task name</p>
+                        <div class="card-status">
+                            <img src="Imagenes/stack-icon.png" alt="">
+                            <p>Status</p>
+                        </div>
+                    </div>
+                    <div class="assigment-card">
+                        <p>Task name</p>
+                        <div class="card-status">
+                            <img src="Imagenes/stack-icon.png" alt="">
+                            <p>Status</p>
+                        </div>
+                    </div>
+                    <div class="assigment-card">
+                        <p>Task name</p>
+                        <div class="card-status">
+                            <img src="Imagenes/stack-icon.png" alt="">
+                            <p>Status</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add Item</button>
+            </div>
+            <div class="column" id="column-2">
+                <p class="column-header">Working on it / <span id="number-of-task-column2">1</span></p>
+                <div class="column-content">
+                    <div class="assigment-card">
+                        <p>Task name</p>
+                        <div class="card-status">
+                            <img src="Imagenes/stack-icon.png" alt="">
+                            <p>Status</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add Item</button>
+            </div>
+            <div class="column" id="column-3">
+                <p class="column-header">Stuck / <span id="number-of-task-column3">0</span></p>
+                <div class="column-content">
+                    <!-- <div class="assigment-card">
+                        <p>Task name</p>
+                        <div class="card-status">
+                            <img src="Imagenes/stack-icon.png" alt="">
+                            <p>Status</p>
+                        </div>
+                    </div> -->
+                </div>
+                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add Item</button>
+            </div>
+            <div class="column" id="column-4">
+                <p class="column-header">Done / <span id="number-of-task-column4">1</span></p>
+                <div class="column-content">
+                    <div class="assigment-card">
+                        <p>Task name</p>
+                        <div class="card-status">
+                            <img src="Imagenes/stack-icon.png" alt="">
+                            <p>Status</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add Item</button>
+            </div>
+            <div class="column" id="column-5">
+                <p class="column-header">New column / <span id="number-of-task-column5">0</span></p>
+                <div class="column-content">
+                    <div class="assigment-card">
+                        <p>Task name</p>
+                        <div class="card-status">
+                            <img src="Imagenes/stack-icon.png" alt="">
+                            <p>Status</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add Item</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
