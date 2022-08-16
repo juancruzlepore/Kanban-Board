@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add Item</button>
+                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add New Card</button>
             </div>
             <div class="column" id="column-2">
                 <p class="column-header">Working on it / <span id="number-of-task-column2">1</span></p>
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add Item</button>
+                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add New Card</button>
             </div>
             <div class="column" id="column-3">
                 <p class="column-header">Stuck / <span id="number-of-task-column3">0</span></p>
@@ -75,7 +75,7 @@
                         </div>
                     </div> -->
                 </div>
-                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add Item</button>
+                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add New Card</button>
             </div>
             <div class="column" id="column-4">
                 <p class="column-header">Done / <span id="number-of-task-column4">1</span></p>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add Item</button>
+                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add New Card</button>
             </div>
             <div class="column" id="column-5">
                 <p class="column-header">New column / <span id="number-of-task-column5">0</span></p>
@@ -101,10 +101,38 @@
                         </div>
                     </div>
                 </div>
-                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add Item</button>
+                <button class="column-footer-button" ><span id="plus-sign">&#43; </span>Add New Card</button>
             </div>
         </section>
     </main>
 </body>
+<script>
+    const newAssigmentCard = document.createElement("div");
+    newAssigmentCard.classList.add("assigment-card");
+    const newTaskName = document.createElement("p");
+    newTaskName.innerHTML = "New Task Name"
+    const newCardStatus = document.createElement("div");
+    newCardStatus.classList.add("card-status");
+    const newStatusImg = document.createElement("img");
+    newStatusImg.src = "Imagenes/stack-icon.png";
+    const newPStatus = document.createElement("p");
+    newPStatus.innerHTML = "Status";
+    newAssigmentCard.appendChild(newTaskName);
+    newAssigmentCard.appendChild(newCardStatus);
+    newCardStatus.appendChild(newStatusImg);
+    newCardStatus.appendChild(newPStatus);
 
+    const newCardButton = document.getElementsByClassName("column-footer-button");
+    const arrayNewCardButton = []
+    for (let element of newCardButton) {
+        arrayNewCardButton.push(element);
+    }
+    let appendAssigmentCard = (event) => {
+        event.target.previousElementSibling.append(newAssigmentCard);
+    }
+    let addAssigmentCard = (button) => {
+        button.addEventListener("click", function () {appendAssigmentCard(event)})
+    }
+    arrayNewCardButton.forEach(addAssigmentCard);
+</script>
 </html>

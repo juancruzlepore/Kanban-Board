@@ -8,9 +8,15 @@ body {
 }
 .even-columns {
     display: flex;
+    justify-content: center;
     gap: 2%;
     width: 100%;
     flex-wrap: wrap;
+}
+@media (min-width: 667px) {
+    .even-columns {
+        justify-content: flex-start;
+    } 
 }
 .even-columns > * {
     margin-top: 2%;
