@@ -17,122 +17,51 @@
             <p>This is the commited plan</p>
         </section>
         <section class="navigation">
-            <button><span id="plus-sign">&#43; </span>Add</button>
+            <button id="add-column"><span class="plus-sign">&#43;</span>Add</button>
             <img src="Imagenes/search-button-c0042ed6.svg" alt="Search button">
             <input type="search" id="search" placeholder="Search" autocomplete="off">
         </section>
     </header>
     <main>
-        <section class="even-columns">
+        <section id="even-columns">
             <div class="column" id="column-1">
                 <p class="column-header">Ready to start / <span id="number-of-task-column1">1</span></p>
                 <div class="column-content">
-                    <div class="assigment-card">
-                        <p>Task name</p>
-                        <div class="card-status">
-                            <img src="Imagenes/stack-icon.png" alt="">
-                            <p>Status</p>
+                   <!-- <div class="column-content">
+                        <div class="assigment-card">
+                            <p>Task name</p>
+                            <div class="card-status">
+                                <img src="Imagenes/stack-icon.png" alt="">
+                                <p>Status</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="assigment-card">
-                        <p>Task name</p>
-                        <div class="card-status">
-                            <img src="Imagenes/stack-icon.png" alt="">
-                            <p>Status</p>
-                        </div>
-                    </div>
-                    <div class="assigment-card">
-                        <p>Task name</p>
-                        <div class="card-status">
-                            <img src="Imagenes/stack-icon.png" alt="">
-                            <p>Status</p>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
-                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add New Card</button>
+                <button class="column-footer-button"><span class="plus-sign">&#43;</span>Add New Card</button>
             </div>
             <div class="column" id="column-2">
                 <p class="column-header">Working on it / <span id="number-of-task-column2">1</span></p>
                 <div class="column-content">
-                    <div class="assigment-card">
-                        <p>Task name</p>
-                        <div class="card-status">
-                            <img src="Imagenes/stack-icon.png" alt="">
-                            <p>Status</p>
-                        </div>
-                    </div>
+                    
                 </div>
-                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add New Card</button>
+                <button class="column-footer-button"><span class="plus-sign">&#43;</span>Add New Card</button>
             </div>
             <div class="column" id="column-3">
                 <p class="column-header">Stuck / <span id="number-of-task-column3">0</span></p>
                 <div class="column-content">
-                    <!-- <div class="assigment-card">
-                        <p>Task name</p>
-                        <div class="card-status">
-                            <img src="Imagenes/stack-icon.png" alt="">
-                            <p>Status</p>
-                        </div>
-                    </div> -->
+                   
                 </div>
-                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add New Card</button>
+                <button class="column-footer-button"><span class="plus-sign">&#43;</span>Add New Card</button>
             </div>
             <div class="column" id="column-4">
                 <p class="column-header">Done / <span id="number-of-task-column4">1</span></p>
                 <div class="column-content">
-                    <div class="assigment-card">
-                        <p>Task name</p>
-                        <div class="card-status">
-                            <img src="Imagenes/stack-icon.png" alt="">
-                            <p>Status</p>
-                        </div>
-                    </div>
+                   
                 </div>
-                <button class="column-footer-button"><span id="plus-sign">&#43; </span>Add New Card</button>
-            </div>
-            <div class="column" id="column-5">
-                <p class="column-header">New column / <span id="number-of-task-column5">0</span></p>
-                <div class="column-content">
-                    <div class="assigment-card">
-                        <p>Task name</p>
-                        <div class="card-status">
-                            <img src="Imagenes/stack-icon.png" alt="">
-                            <p>Status</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="column-footer-button" ><span id="plus-sign">&#43; </span>Add New Card</button>
+                <button class="column-footer-button"><span class="plus-sign">&#43;</span>Add New Card</button>
             </div>
         </section>
     </main>
 </body>
-<script>
-    const newAssigmentCard = document.createElement("div");
-    newAssigmentCard.classList.add("assigment-card");
-    const newTaskName = document.createElement("p");
-    newTaskName.innerHTML = "New Task Name"
-    const newCardStatus = document.createElement("div");
-    newCardStatus.classList.add("card-status");
-    const newStatusImg = document.createElement("img");
-    newStatusImg.src = "Imagenes/stack-icon.png";
-    const newPStatus = document.createElement("p");
-    newPStatus.innerHTML = "Status";
-    newAssigmentCard.appendChild(newTaskName);
-    newAssigmentCard.appendChild(newCardStatus);
-    newCardStatus.appendChild(newStatusImg);
-    newCardStatus.appendChild(newPStatus);
-
-    const newCardButton = document.getElementsByClassName("column-footer-button");
-    const arrayNewCardButton = []
-    for (let element of newCardButton) {
-        arrayNewCardButton.push(element);
-    }
-    let appendAssigmentCard = (event) => {
-        event.target.previousElementSibling.append(newAssigmentCard);
-    }
-    let addAssigmentCard = (button) => {
-        button.addEventListener("click", function () {appendAssigmentCard(event)})
-    }
-    arrayNewCardButton.forEach(addAssigmentCard);
-</script>
+<script type="text/javascript" src="main.js"></script>
 </html>

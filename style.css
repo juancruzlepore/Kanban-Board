@@ -6,7 +6,7 @@ body {
     margin: 0 1% 0 1%;
     background-color: rgb(252, 252, 252);
 }
-.even-columns {
+#even-columns {
     display: flex;
     justify-content: center;
     gap: 2%;
@@ -14,17 +14,17 @@ body {
     flex-wrap: wrap;
 }
 @media (min-width: 667px) {
-    .even-columns {
+    #even-columns {
         justify-content: flex-start;
     } 
 }
-.even-columns > * {
+#even-columns > * {
     margin-top: 2%;
     flex-basis: 20rem;
     height: fit-content;
     min-height: 12rem;
 }
-.even-columns > * {
+#even-columns > * {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,6 +43,7 @@ body {
     border-top-left-radius: 0.7rem;
     text-align: center;
     color: white;
+    background-color: rgb(220, 122, 255);
 }
 .column-content {
     margin: 0.8rem;
@@ -58,7 +59,7 @@ body {
     border: none;
     background-color: rgb(243, 243, 243);
 }
-#plus-sign {
+.plus-sign {
     margin-right: 0.5 rem;
 }
 .assigment-card {
